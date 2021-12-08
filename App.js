@@ -5,7 +5,10 @@ const App = () => {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.text}>Hello Biggs</Text>
-			<Image/>
+			<Image 
+				source={{uri: 'https://randomuser.me/api/portraits/women/3.jpg'}}
+				style={styles.img}	
+			/>
 		</View>
 	)
 }
@@ -20,6 +23,12 @@ const styles = StyleSheet.create({
 	text: {
 		color: 'darkslateblue', 
 		fontSize: 30
+	},
+
+	img: {
+		width: 100,
+		height: 100,
+		borderRadius: 50
 	}
 });
 
